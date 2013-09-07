@@ -9,7 +9,13 @@ Helps django developers to support mobile users, features:
 ## Installation
 
 Download the code; put in into your project's directory,
-if you want a system-wide instalation you can run <pre>python setup.py install</pre> or <pre>sudo easy_install django-mobile-helper</pre>
+if you want a system-wide instalation you can run
+
+	python setup.py install
+
+or
+
+	sudo easy_install django-mobile-helper
 
 
 REQUIREMENTS: django !
@@ -18,8 +24,8 @@ REQUIREMENTS: django !
 
 ### MOBILE_PATTERN
 
-	Regular expression to match mobile user in HTTP_USER_AGENT header.
-	default: constants.py
+Regular expression to match mobile user in HTTP_USER_AGENT header.
+default: constants.py
 
 ## USAGE
 
@@ -41,6 +47,8 @@ In your settings.py add:
 You can use it in any view function:
 
 	from django_mobile.middleware import MobileMiddleware
+
+
 	@login_required
 	@render_to(template='desktop.html', mobile_template='mobile_template.html')
 	def view_function(request):
