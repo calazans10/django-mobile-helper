@@ -25,6 +25,7 @@ REQUIREMENTS: django !
 ### MOBILE_PATTERN
 
 Regular expression to match mobile user in HTTP_USER_AGENT header.
+
 default: constants.py
 
 ## USAGE
