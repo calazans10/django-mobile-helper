@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+import re
 from django.conf import settings
 from constants import AGENT, VERSION
-import re
 
 
 class MobileMiddleware(object):

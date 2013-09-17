@@ -1,7 +1,10 @@
-#coding: utf-8
+# -*- coding: utf-8 -*-
 import ez_setup
-ez_setup.use_setuptools()
 from setuptools import setup, find_packages
+
+
+ez_setup.use_setuptools()
+
 setup(
     name="django-mobile",
     version="0.2",
